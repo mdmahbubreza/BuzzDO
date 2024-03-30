@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <title>BuzzDo Notes</title>
+    <link rel="stylesheet" href="notes-styles.css" />
+    </head>
+    <body>
+        <header>
+            <div id="logo"><h3>BuzzDO</h3></div>
+            <div id="searchbar">
+                <input type="text" placeholder="Search">
+                <button type="submit">go</button>
+            </div>
+            <div>
+                <button id="addNote">+New Note</button>
+            </div>
+        </header>
+        <main>
+            <div id="container">
+                <div id="list-header">
+                    <div id="addNoteDiv" onclick="popup()">
+                        <i class="fa-solid fa-plus"></i>
+                    </div>
+                    <div class="blankDiv"></div>
+                    <div class="blankDiv"></div>
+                </div>
+                
+                <div id="list-container">
+                    <ul id="notes-list"></ul>
+                </div>
+            </div>
+        </main>
+        <script src="notes-scripts.js"></script>
+    </body>
+</html>

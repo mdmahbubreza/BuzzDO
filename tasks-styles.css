@@ -1,0 +1,221 @@
+body{
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: whitesmoke;
+}
+div{
+  border: 1px solid red;
+}
+
+/* header{
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 1px 1px 5px white;
+}
+
+#BuzzDOlogo{
+  width: 30px;
+}
+
+#logo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#headsearch{
+  background-color: #222;
+}
+
+#headsearchBtn{
+  background-color: white;
+  
+}
+
+#search{
+  width: ;
+} */
+
+#addTask{
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  font-size: 16px;
+  border-radius: 40px;
+  margin-right: 50px;
+  cursor: pointer;
+}
+
+#addTask:hover{
+  transition: 0.25s;
+  background-color: #f1f1f1;
+}
+
+.sidebar {
+  position: fixed;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background: #444;
+  transition: all .5s ease;
+}
+
+.sidebar header{
+  font-size: 22px;
+  color: whitesmoke;
+  text-align: center;
+  line-height: 70px;
+  background: #444;
+  user-select: none;
+}
+
+.sidebar ul a{
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 65px;
+  font-size: 20px;
+  color: whitesmoke;
+  padding-left: 40px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(255,255,255,.1);
+  border-bottom: 1px solid black;
+  transition: .4s;
+}
+
+ul li:hover a{
+  padding-left: 50px;
+}
+
+#check{
+  display: none;
+}
+
+label #btn, label #cancel {
+  position: absolute;
+  cursor: pointer;
+  border-radius: 3px;
+  background: transparent;
+}
+
+label #btn{
+  left: 40px;
+  top: 25px;
+  font-size: 35px;
+  padding: 6px 12px;
+  transition: all .5s;
+}
+
+label #cancel{
+  z-index: 1111;
+  left: -195px;
+  top: 17px;
+  font-size: 30px;
+  color: #111;
+  padding: 4px 9px;
+  transform: all .5s;
+}
+
+#check:checked ~ .sidebar{
+  left: 0;
+}
+
+#check:checked ~ label #btn{
+  left: 250px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+#check:checked ~ label #cancel{
+  left: 195px;
+}
+
+.task{
+  width: 100%;
+  max-width: 540px;
+  background: #444;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+}
+.task h2{
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #444;
+}
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+input{
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+  font-weight: 14px;
+}
+button{
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background: #ff5945;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+ul li{
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+  background-color: #444;
+}
+ul li::before{
+  content: '';
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(images/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+ul li.checked{
+  color: #555;
+  text-decoration: line-through;
+}
+ul li.checked::before{
+  background-image: url(images/checked.png);
+}
+ul li span{
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+ul li span:hover{
+  background: #edeef0;
+}
