@@ -37,7 +37,7 @@ function showTask() {
 }
 showTask();
 
-// yaha menubtn ka code ha
+// menubtn code
 let menucontent = document.getElementById("menucontent");
 
 let btn = document.getElementById("menubtn");
@@ -47,7 +47,7 @@ btn.addEventListener("click", () => {
     menucontent.style.left = "0";
     butn = true;
   } else {
-    menucontent.style.left = "-340px"
+    menucontent.style.left = "-340px";
     butn = false;
   }
 });
