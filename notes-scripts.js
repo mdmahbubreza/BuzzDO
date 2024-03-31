@@ -145,3 +145,18 @@ function deleteNote(noteId) {
 }
 
 displayNotes();
+
+// yaha menubtn ka code ha
+let menucontent = document.getElementById("menucontent");
+
+let btn = document.getElementById("menubtn");
+let butn = false;
+btn.addEventListener("click", () => {
+  if (!butn) {
+    menucontent.style.left = "0";
+    butn = true;
+  } else {
+    menucontent.style.left = "-340px"
+    butn = false;
+  }
+});
