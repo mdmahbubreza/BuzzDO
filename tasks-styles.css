@@ -6,7 +6,6 @@ body {
   position: relative;
 }
 
-/* yaha se mene code likha ha */
 header {
   width: 100%;
   border-bottom: 1px solid #00ff99;
@@ -81,7 +80,6 @@ header {
   border-radius: 50% 2px 50% 2px;
   background-color: #666;
 }
-/* yahi tak tha */
 
 #addTask {
   border: none;
