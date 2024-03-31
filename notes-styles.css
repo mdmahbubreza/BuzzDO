@@ -1,12 +1,12 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: #111;
+  background-color: #222;
   color: whitesmoke;
 }
 /* div {
-  border: 1px solid red;
-} */
+    border: 1px solid red;
+  } */
 main {
   margin-top: 50px;
   padding: 0px 80px;
@@ -14,11 +14,11 @@ main {
 }
 
 /* yaha se mene code likha ha */
+/* yaha se mene code likha ha */
 header {
-
   width: 100%;
   border-bottom: 1px solid #00ff99;
-  background-color: #545454;
+  background-color: #333;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -89,83 +89,6 @@ header {
   border-radius: 50% 2px 50% 2px;
   background-color: #666;
 }
-/* yahi tak tha */
-
-    width: 100%;
-    border-bottom: 1px solid #00ff99;
-    background-color: #333;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  #logo {
-    padding: 8px 10px;
-    display: flex;
-    width: 18%;
-    align-items: center;
-    justify-content: space-between;
-    gap: 9px;
-  }
-  #menubtn {
-    padding: 3px 6px;
-    background-color: #555;
-  }
-  #menubtn img {
-    width: 44px;
-  }
-  #logoimg {
-    width: 60px;
-    border-radius: 50% 10px 50% 0px;
-  }
-  #logo h3 {
-    font-size: 28px;
-  }
-  #logocontainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 9px;
-    padding: 3px 9px;
-  }
-  #SearchBar {
-    padding: 8px 90px;
-  }
-  #SearchBar input {
-    font-size: 19px;
-    padding: 8px 14px;
-    border: 1px solid #00ff99;
-    border-radius: 30px;
-    background-color: white;
-  }
-  #search {
-    font-size: 18px;
-    color: #444;
-    padding: 10px 14px;
-    background-color: #00ff99;
-  }
-  
-  #menucontent {
-    width: 20%;
-    height: 90vh;
-    position: absolute;
-    position: fixed;
-    top: 111px;
-    left: -340px;
-    text-align: center;
-    background-color: #333;
-    transition: left 1.5s ease;
-  }
-  .menubtn {
-    font-size: 28px;
-    width: 50%;
-    margin-top: 50px;
-    padding: 9px;
-    text-align: center;
-    border-radius: 50% 2px 50% 2px;
-    background-color: #666;
-  }
-  /* yahi tak tha */
-
 
 #addNote {
   background-color: #e1905e;
@@ -237,13 +160,6 @@ header {
   color: gainsboro;
 }
 
-/* List CSS */
-/* #list-container {
-  /* display: flex; */
-/* margin: 50px 80px; */
-/* align-items: left; */
-/* justify-content: left; */
-/* }  */
 ul {
   list-style-type: none;
   padding: 0;
@@ -296,60 +212,60 @@ li span::-webkit-scrollbar {
 }
 #editBtn:hover {
   background-color: gray;
-=======
-#List-container{
-    display: flex;
-    align-items: left;
-    justify-content: left;
 }
-ul{
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    text-align: center;
-}
-li{
-    background-color: transparent;
-    margin: 5px 0px;
-    padding: 20px;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 200px;
-    width: 200px;
-    margin: 10px;
-    border-radius: 20px;
-    box-shadow: 9px 9px 18px #b3b3b3, -9px -9px 18px #ffffff;
-}
-li span{
-    font-size: 12px;
-    flex-grow: 1;
-    word-wrap: break-word;
-    overflow-y: scroll;
-}
-#editBtn, #deleteBtn{
-    background-color: #c6aaff;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    margin: 0px 5px;
-    cursor: pointer;
-    border-radius: 4px;
-    font-size: 12px;
-    width: 60px;
-}
-#editBtn{
-    background-color: gainsboro;
-}
-#deleteBtn:hover{
-    background-color: #8c53ff;
-}
-#editBtn:hover{
-    background-color: gray;
 
+#List-container {
+  display: flex;
+  align-items: left;
+  justify-content: left;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  text-align: center;
+}
+li {
+  background-color: transparent;
+  margin: 5px 0px;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+  border-radius: 20px;
+}
+li span {
+  font-size: 12px;
+  flex-grow: 1;
+  word-wrap: break-word;
+  overflow-y: scroll;
+}
+#editBtn,
+#deleteBtn {
+  background-color: #c6aaff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  margin: 0px 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 12px;
+  width: 60px;
+}
+#editBtn {
+  background-color: gainsboro;
+}
+#deleteBtn:hover {
+  background-color: #8c53ff;
+}
+#editBtn:hover {
+  background-color: gray;
 }
 
 /* Create Note Popup CSS */
@@ -391,7 +307,6 @@ textarea {
 
 #submitBtn,
 #closeBtn {
-  /* width: 100px; */
   background-color: #3784ad;
   color: #fff;
   font-size: 30px;
@@ -429,8 +344,6 @@ textarea {
   justify-content: center;
 }
 
-
 #closeBtn {
-    background-color: gainsboro;
+  background-color: gainsboro;
 }
-
