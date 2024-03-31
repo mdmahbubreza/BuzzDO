@@ -14,18 +14,82 @@ main{
     min-height: 100vh;
 }
 
-header{
+/* yaha se mene code likha ha */
+header {
+    width: 100%;
+    border-bottom: 1px solid #00ff99;
     background-color: #333;
-    padding: 10px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #logo {
+    padding: 8px 10px;
+    display: flex;
+    width: 18%;
     align-items: center;
     justify-content: space-between;
-    box-shadow: 1px 1px 5px white;
-}
-
-#searchbar{
-    background: #444;
-}
+    gap: 9px;
+  }
+  #menubtn {
+    padding: 3px 6px;
+    background-color: #555;
+  }
+  #menubtn img {
+    width: 44px;
+  }
+  #logoimg {
+    width: 60px;
+    border-radius: 50% 10px 50% 0px;
+  }
+  #logo h3 {
+    font-size: 28px;
+  }
+  #logocontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    padding: 3px 9px;
+  }
+  #SearchBar {
+    padding: 8px 90px;
+  }
+  #SearchBar input {
+    font-size: 19px;
+    padding: 8px 14px;
+    border: 1px solid #00ff99;
+    border-radius: 30px;
+    background-color: white;
+  }
+  #search {
+    font-size: 18px;
+    color: #444;
+    padding: 10px 14px;
+    background-color: #00ff99;
+  }
+  
+  #menucontent {
+    width: 20%;
+    height: 90vh;
+    position: absolute;
+    position: fixed;
+    top: 111px;
+    left: -340px;
+    text-align: center;
+    background-color: #333;
+    transition: left 1.5s ease;
+  }
+  .menubtn {
+    font-size: 28px;
+    width: 50%;
+    margin-top: 50px;
+    padding: 9px;
+    text-align: center;
+    border-radius: 50% 2px 50% 2px;
+    background-color: #666;
+  }
+  /* yahi tak tha */
 
 #addNote{
     background-color: green;
@@ -109,7 +173,7 @@ ul{
     text-align: center;
 }
 li{
-    background-color: #fff385;
+    background-color: transparent;
     margin: 5px 0px;
     padding: 20px;
     border-radius: 8px;
