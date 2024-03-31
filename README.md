@@ -9,10 +9,10 @@ Additionally, it offers a specialized dashboard for professors or managers to as
 ![Screenshot 2024-03-31 214349](https://github.com/mdmahbubreza/BuzzDO/assets/141657720/dfc7b19b-74a5-451b-a343-b062cd97e41c)
 
 
-![Screenshot 2024-03-31 214703](https://github.com/mdmahbubreza/BuzzDO/assets/141657720/c4127beb-f850-4fc2-92ab-ba49439dd555)![Screenshot 2024-03-31 214543]
+![Screenshot 2024-03-31 214703](https://github.com/mdmahbubreza/BuzzDO/assets/141657720/c4127beb-f850-4fc2-92ab-ba49439dd555)
 
 
-(https://github.com/mdmahbubreza/BuzzDO/assets/141657720/e91c1cf0-6569-4c2a-9744-4e9cd295c502)
+![Screenshot 2024-03-31 214543](https://github.com/mdmahbubreza/BuzzDO/assets/141657720/e91c1cf0-6569-4c2a-9744-4e9cd295c502)
 
 
 ![Screenshot 2024-03-31 214604](https://github.com/mdmahbubreza/BuzzDO/assets/141657720/78fe2f4e-7885-42ca-b41e-bb6898c47657)
