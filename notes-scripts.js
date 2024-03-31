@@ -64,8 +64,8 @@ function displayNotes() {
         listItem.innerHTML = `
         <span>${note.text}</span>
         <div id="noteBtns-container">
-            <button id="editBtn" onclick="editNote(${note.id})"><i class="fa-solid fa-pen"></i></button>
-            <button id="deleteBtn" onclick="deleteNote(${note.id})"><i class="fa-solid fa-trash"></i></button>
+            <button id="editBtn" onclick="editNote(${note.id})">Edit</button>
+            <button id="deleteBtn" onclick="deleteNote(${note.id})">Delet</button>
         </div>
         `;
         notesList.appendChild(listItem);
@@ -145,3 +145,18 @@ function deleteNote(noteId) {
 }
 
 displayNotes();
+
+// yaha menubtn ka code ha
+let menucontent = document.getElementById("menucontent");
+
+let btn = document.getElementById("menubtn");
+let butn = false;
+btn.addEventListener("click", () => {
+  if (!butn) {
+    menucontent.style.left = "0";
+    butn = true;
+  } else {
+    menucontent.style.left = "-340px"
+    butn = false;
+  }
+});

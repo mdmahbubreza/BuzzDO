@@ -6,24 +6,41 @@
     </head>
     <body>
         <header>
-            <div id="logo"><h3>BuzzDO</h3></div>
-            <div id="searchbar">
-                <input type="text" placeholder="Search">
-                <button type="submit">go</button>
-            </div>
-            <div>
-                <button id="addNote">+New Note</button>
-            </div>
+            <!-- yaha se -->
+      <div id="logo">
+        <div id="menubtncontainer">
+         <button id="menubtn"> <img src="images/menu.png" alt="" /></button>
+        </div>
+        <div id="logocontainer">
+          <img src="images/BuzzDO.png" id="logoimg" alt="" />
+          <h3>BuzzDo</h3>
+        </div>
+      </div>
+      <div id="SearchBar">
+        <input type="text" placeholder="search" />
+        <button id="search">search</button>
+      </div>
+      <div>
+        <button id="addNote" onclick="popup()">+New Note</button>
+        <i class="fa-solid fa-plus"></i>
+    </div>
+    </header>
+    <div id="menucontent">
+      <button class="menubtn">Notes</button>
+      <button class="menubtn">Tasks</button>
+      <button class="menubtn">Profile</button>
+      <button class="menubtn">About</button>
+    </div>
         </header>
         <main>
             <div id="container">
-                <div id="list-header">
+                <!-- <div id="list-header">
                     <div id="addNoteDiv" onclick="popup()">
                         <i class="fa-solid fa-plus"></i>
                     </div>
                     <div class="blankDiv"></div>
                     <div class="blankDiv"></div>
-                </div>
+                </div> -->
                 
                 <div id="list-container">
                     <ul id="notes-list"></ul>
