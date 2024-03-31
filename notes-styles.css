@@ -1,21 +1,96 @@
-body{
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #111;
-    color: whitesmoke;
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #111;
+  color: whitesmoke;
 }
-div{
-    border: 1px solid red;
-}
-main{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+/* div {
+  border: 1px solid red;
+} */
+main {
+  margin-top: 50px;
+  padding: 0px 80px;
+  height: 100vh;
 }
 
 /* yaha se mene code likha ha */
 header {
+
+  width: 100%;
+  border-bottom: 1px solid #00ff99;
+  background-color: #545454;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#logo {
+  padding: 8px 10px;
+  display: flex;
+  width: 18%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 9px;
+}
+#menubtn {
+  padding: 3px 6px;
+  background-color: #555;
+}
+#menubtn img {
+  width: 44px;
+}
+#logoimg {
+  width: 60px;
+  border-radius: 50% 10px 50% 0px;
+}
+#logo h3 {
+  font-size: 28px;
+}
+#logocontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  padding: 3px 9px;
+}
+#SearchBar {
+  padding: 8px 90px;
+}
+#SearchBar input {
+  font-size: 19px;
+  padding: 8px 14px;
+  border: 1px solid #00ff99;
+  border-radius: 30px;
+  background-color: white;
+}
+#search {
+  font-size: 18px;
+  color: #444;
+  padding: 10px 14px;
+  background-color: #00ff99;
+}
+
+#menucontent {
+  width: 20%;
+  height: 90vh;
+  position: absolute;
+  position: fixed;
+  top: 111px;
+  left: -340px;
+  text-align: center;
+  background-color: #333;
+  transition: left 1.5s ease;
+}
+.menubtn {
+  font-size: 28px;
+  width: 50%;
+  margin-top: 50px;
+  padding: 9px;
+  text-align: center;
+  border-radius: 50% 2px 50% 2px;
+  background-color: #666;
+}
+/* yahi tak tha */
+
     width: 100%;
     border-bottom: 1px solid #00ff99;
     background-color: #333;
@@ -91,75 +166,137 @@ header {
   }
   /* yahi tak tha */
 
-#addNote{
-    background-color: green;
-    color: whitesmoke;
-    padding: 18px 40px;
-    margin-right: 50px;
-    border-radius: 50px;
-    cursor: pointer;
+
+#addNote {
+  background-color: #e1905e;
+  color: whitesmoke;
+  font-size: 18px;
+  padding: 18px 40px;
+  margin-right: 50px;
+  border-radius: 50px;
+  cursor: pointer;
 }
-#addNote:hover{
-    transition: 0.25s;
-    background-color: #f1f1f1;
+#addNote:hover {
+  transition: 0.25s;
+  background-color: #f1f1f1;
 }
 
-#container{
-    background-color: #444;
-    border-radius: 8px;
-    overflow: hidden;
-    width: 827px;
-    height: 600px;
-    padding: 20px;
-    box-sizing: border-box;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    overflow-y: scroll;
+#container {
+  background-color: #444;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  border: 2px dotted aquamarine;
+  box-sizing: border-box;
+  /* text-align: center;     */
+  align-items: center;
+  justify-content: center;
+  /* overflow-y: scroll; */
 }
 
-#list-header{
-    display: flex;
-    align-items: left;
-    justify-content: left;
+#list-header {
+  display: flex;
+  align-items: left;
+  justify-content: left;
 }
 
-.blankDiv{
-    background-color: #fff;
-    border: none;
-    padding: 20px;
-    border-radius: 8px;
-    height: 200px;
-    width: 200px;
-    margin: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.blankDiv {
+  background-color: #fff;
+  border: none;
+  padding: 20px;
+  border-radius: 8px;
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#addNoteDiv{
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 8px;
-    height: 200px;
-    width: 200px;
-    margin: 10px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#addNoteDiv {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  height: 200px;
+  width: 200px;
+  margin: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#addNoteDiv:hover{
-    transition: 0.25s;
-    background-color: #f1f1f1;
+#addNoteDiv:hover {
+  transition: 0.25s;
+  background-color: #f1f1f1;
 }
-#addNoteDiv i{
-    font-size: 70px;
-    color: gainsboro;
+#addNoteDiv i {
+  font-size: 70px;
+  color: gainsboro;
 }
 
 /* List CSS */
+/* #list-container {
+  /* display: flex; */
+/* margin: 50px 80px; */
+/* align-items: left; */
+/* justify-content: left; */
+/* }  */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+li {
+  background-color: transparent;
+  margin: 5px 0px;
+  padding: 4px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 28%;
+  height: 13rem;
+  margin: 10px;
+  border: 2px solid #50e1a2;
+}
+li span {
+  width: 100%;
+  font-size: 18px;
+  flex-grow: 1;
+  word-wrap: break-word;
+  overflow-y: scroll;
+}
+li span::-webkit-scrollbar {
+  display: none;
+}
+#editBtn,
+#deleteBtn {
+  background-color: #d3544b;
+  color: #ffffff;
+  border: none;
+  padding: 5px 10px;
+  margin: 4px 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 20px;
+}
+#editBtn {
+  background-color: #1ee693;
+  color: black;
+}
+#deleteBtn:hover {
+  background-color: #8c53ff;
+}
+#editBtn:hover {
+  background-color: gray;
+=======
 #List-container{
     display: flex;
     align-items: left;
@@ -212,91 +349,88 @@ li span{
 }
 #editBtn:hover{
     background-color: gray;
+
 }
 
 /* Create Note Popup CSS */
-#popupContainer{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 400px;
-    height: 300px;
-    background-color: white;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+#popupContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 300px;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+#notes-list {
+  display: flex;
+  justify-content: center;
 }
 
 textarea {
-    width: 300px;
-    height: 200px;
-    margin: 10px 0;
-    padding: 10px;
-    box-sizing: border-box;
-    border-radius: 4px;
-    border: 2px solid #8c53ff;
+  width: 300px;
+  height: 200px;
+  margin: 10px 0;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 2px solid #8c53ff;
 }
 
 #btn-container {
-    display: flex;
+  display: flex;
 }
 
-#submitBtn, #closeBtn {
-    width: 100px;
-    background-color: #8c53ff;
-    color: #fff;
-    font-size: 14px;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    cursor: pointer;
-    margin: 10px;
+#submitBtn,
+#closeBtn {
+  /* width: 100px; */
+  background-color: #3784ad;
+  color: #fff;
+  font-size: 30px;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px;
 }
 
 #closeBtn {
-    background-color: gainsboro;
+  background-color: #e87676;
 }
-
 
 /* Editing Popup CSS */
 #editing-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 400px;
-    height: 300px;
-    background-color: white;
-    border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    border-radius: 8px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
+  color: #000000;
+}
+#editing-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  height: 300px;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
-#submitBtn, #closeBtn {
-    width: 100px;
-    background-color: #8c53ff;
-    color: #fff;
-    font-size: 14px;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    cursor: pointer;
-    margin: 10px;
-}
 
 #closeBtn {
     background-color: gainsboro;
 }
+

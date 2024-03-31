@@ -64,8 +64,8 @@ function displayNotes() {
         listItem.innerHTML = `
         <span>${note.text}</span>
         <div id="noteBtns-container">
-            <button id="editBtn" onclick="editNote(${note.id})"><i class="fa-solid fa-pen"></i></button>
-            <button id="deleteBtn" onclick="deleteNote(${note.id})"><i class="fa-solid fa-trash"></i></button>
+            <button id="editBtn" onclick="editNote(${note.id})">Edit</button>
+            <button id="deleteBtn" onclick="deleteNote(${note.id})">Delet</button>
         </div>
         `;
         notesList.appendChild(listItem);
