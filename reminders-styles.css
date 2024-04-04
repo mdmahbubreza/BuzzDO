@@ -184,6 +184,7 @@ body {
     cursor: pointer;
     border-radius: 40px;
     color: white;
+    background-color: #222;
   }
   label,
   input {
