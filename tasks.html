@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BuzzDo Tasks</title>
+    <link rel="stylesheet" href="tasks-styles.css" />
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <div id="menubtncontainer">
+          <button id="menubtn"><img src="images/menu.png" alt="" /></button>
+        </div>
+        <div id="logocontainer">
+          <img src="images/BuzzDO.png" id="logoimg" alt="" />
+          <h3>BuzzDo</h3>
+        </div>
+      </div>
+      <div id="SearchBar">
+        <input type="text" placeholder="search" />
+        <button id="search">search</button>
+      </div>
+    </header>
+    <div id="menucontent">
+      <a href="notes.html"><button class="menubtn">Notes</button></a>
+      <a href="tasks.html"><button class="menubtn">Tasks</button></a>
+      <a href="reminders.html"><button class="menubtn">Reminders</button></a>
+      <a href="calendar.html"><button class="menubtn">Calendar</button></a>
+    </div>
+    <div id="container">
+      <div class="task">
+        <h2>My Tasks</h2>
+        <div class="row">
+          <input type="text" id="input-task" placeholder="Add a task.." />
+          <button onclick="addTask()">Add</button>
+        </div>
+        <ul id="list-container"></ul>
+      </div>
+    </div>
+    <script src="tasks-scripts.js"></script>
+  </body>
+</html>

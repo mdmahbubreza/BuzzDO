@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>BuzzDo Reminders</title>
+    <link rel="stylesheet" href="reminders-styles.css" />
+  </head>
+  <body>
+    <header>
+      <div id="logo">
+        <div id="menubtncontainer">
+          <button id="menubtn"><img src="images/menu.png" alt="" /></button>
+        </div>
+        <div id="logocontainer">
+          <img src="images/BuzzDO.png" id="logoimg" alt="" />
+          <h3>BuzzDo</h3>
+        </div>
+      </div>
+      <div id="SearchBar">
+        <input type="text" placeholder="search" />
+        <button id="search">search</button>
+      </div>
+    </header>
+    <div id="menucontent">
+      <a href="notes.html"><button class="menubtn">Notes</button></a>
+      <a href="tasks.html"><button class="menubtn">Tasks</button></a>
+      <a href="reminders.html"><button class="menubtn">Reminders</button></a>
+      <a href="calendar.html"><button class="menubtn">Calendar</button></a>
+    </div>
+    <div class="container">
+      <h2 style="text-align: center;">Reminders</h2>
+      <label for="">Task</label>
+      <input type="text" id="task" />
+      <label for="">Date:</label>
+      <input type="date" id="date" />
+      <label for="">Time:</label>
+      <input type="time" id="time" />
+
+      <button style="width: 100%;" onclick="scheduleReminder();" id="sr">
+      Schedule Reminder
+      </button>
+
+      <table border="1">
+          <thead>
+              <tr>
+                  <th>Task</th>
+                  <th>Date & Time</th>
+                  <th>Action</th>
+              </tr>
+          </thead>
+          <tbody id="reminderTableBody"></tbody>
+      </table>
+    </div>
+    <audio src="" id="notificationSound"></audio>
+    <script src="reminders-scripts.js"></script>
+  </body>
+</html>
