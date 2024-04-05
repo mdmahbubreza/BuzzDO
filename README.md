@@ -1,4 +1,13 @@
-# BuzzDo
+# BuzzDo: Master Your Tasks, Conquer Your Day
+
+## Table of Contents
+
+- [Description](#description)
+- [Key Features](#key-features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
 ## Description
 
@@ -31,3 +40,7 @@ Contributions to BuzzDo are welcome! If you'd like to contribute:
 - Fork the repository.
 - Make your changes.
 - Submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
