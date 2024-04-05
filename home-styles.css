@@ -15,7 +15,7 @@ header {
   box-shadow: 1px 1px 5px white;
 }
 
-#exploreNow {
+#reminders {
   padding: 20px 35px;
   margin: 5px;
   margin-right: 100px;
@@ -73,7 +73,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  mix-blend-mode: color-burn;
+  border-radius: 50% 10px 50% 0px;
 }
 
 #item {
