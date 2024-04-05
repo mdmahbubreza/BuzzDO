@@ -76,6 +76,10 @@ button {
   border-radius: 50% 10px 50% 0px;
 }
 
+img {
+  border-radius: 50px 50px 50% 50px;
+}
+
 #item {
   padding: 50px;
   width: 50%;
